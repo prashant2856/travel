@@ -28,9 +28,18 @@ footer.te-footer {
           }
     }
     .social-icon{
+        padding: 66px 0;
         .fa-facebook {
             color: #000000;
-            padding: 66px 0;
+            font-size: 44px;
+        }
+        .fa-linkedin{
+            color: #000000;
+            font-size: 44px;
+        }
+        .fa-instagram{
+            color: #000000;
+            font-size: 44px;  
         }
     }
 }   
