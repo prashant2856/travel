@@ -1,0 +1,37 @@
+footer.te-footer {
+.footer-info{
+    margin-top: 178px;
+    background-color: #E1E8F8; 
+    border-radius: 18px;
+    height: auto;
+    .copyright{
+      color: #000000;
+      padding: 76px 0;
+    }
+    .footer-nav{
+        
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 76px 0;
+            li {
+                text-decoration: none;
+                list-style: none;
+    
+                a {
+                    color: #000000;
+                    font-size: 20px;
+                    line-height: 29px;
+                  }
+            }
+          }
+    }
+    .social-icon{
+        .fa-facebook {
+            color: #000000;
+            padding: 66px 0;
+        }
+    }
+}   
+}
