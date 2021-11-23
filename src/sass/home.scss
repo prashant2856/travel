@@ -35,13 +35,17 @@ body{
          object-fit: cover;
        }
        .banner-heading{
-          color:#FFFFFF;
+          background-color:red;
           text-transform: uppercase;
        }
     }
   }
   .travel-info{
-     padding: 178px 0;
+    padding: 35px 0;
+    @include media-breakpoint-up(sm){
+      padding: 178px 0;
+    }
+     
   .box-section{
     @include media-breakpoint-up(sm){
     display: flex;
@@ -63,10 +67,28 @@ body{
         background-color: #EBF0FE;
         box-shadow: 0px 3px 6px #F0F4FC;
         opacity: 0.75;
+       &.icn2{
         img{
-          padding:14px 25px;
+          padding:14px 16px;
           object-fit: cover;
         }
+       }
+       &.icn3{
+        img{
+          padding:28px 20px;
+          object-fit: cover;
+        }
+       }
+       &.icn4{
+        img{
+          padding:12px 20px;
+          object-fit: cover;
+        }
+       }
+       img{
+        padding:14px 25px;
+        object-fit: cover;
+      }
       }
       .card-title{
         color: #0F0F0F;
@@ -74,19 +96,28 @@ body{
       }
       .card-text{
         color: #0F0F0F;
-        font-size: 20px;
+        font-size: 15px;
+        @include media-breakpoint-up(sm){
+          font-size: 20px; 
+        }
       }
     }
    }
  } 
 
  .destination{
-   padding: 64px 0;
-   background-color: #F1FAFF;
+  background-color: #F1FAFF;
+   @include media-breakpoint-up(sm){
+    padding: 25px 0;
+   }
    .tour-heading{
-     padding: 64px 0;
-     color: #000000;
-     text-align: center;
+    padding: 25px 0;
+    color: #000000;
+    text-align: center;
+     @include media-breakpoint-up(sm){
+      padding: 64px 0;
+      text-align: center;
+     }
     }
     .tab-section{
       display: flex;
@@ -94,17 +125,30 @@ body{
       justify-content: center;
     .tour-title{
       color: #163235;
-      font-size: 22px;
+      font-size: 18px;
+      @include media-breakpoint-up(sm){
+        font-size: 22px;
+      }
+      
     &.menu-first{
       position: relative;
       &::after{
         content: "";
+        position: absolute;
+        left: 18px;
+        bottom: 0;
+        background-color: #163235;
+        height: 5px;
+        width: 182px; 
+          @include media-breakpoint-up(sm){
+          content: "";
           position: absolute;
           left: 15px;
           bottom: 0;
           background-color: #163235;
           height: 5px;
           width: 221px; 
+        } 
        }
       }  
      }  
@@ -117,6 +161,11 @@ body{
     .destination-card{
       padding-top: 64px;
       max-width: 552px;
+      margin-bottom: 35px;
+      @include media-breakpoint-up(sm){
+        padding-top: 64px;
+        max-width: 552px;
+      }
       .des-fig{
         margin: 0;
         width: 100%;
@@ -138,7 +187,11 @@ body{
       }
       .card-text{
         color: #163235;
-        font-size: 20px;
+        font-size: 16px;
+        @include media-breakpoint-up(sm){
+          font-size: 20px;
+        }
+        
        }
        .tour-icon{
         img{
@@ -148,15 +201,26 @@ body{
        }
        .price{
          color: #163235;
-         font-size: 31px;
+         font-size: 20px;
+         @include media-breakpoint-up(sm){
+          font-size: 31px;
+         }
        }
          .dist-text{
            color: #163235;
-           font-size: 22px;
+           font-size: 18px;
+           @include media-breakpoint-up(sm){
+            font-size: 22px;
+           }
+           
          }
          .stay-text{
            color: #163235;
-           font-size:22px;
+           font-size:18px;
+           @include media-breakpoint-up(sm){
+            font-size:22px;
+           }
+           
          }
       } 
      }
@@ -164,8 +228,11 @@ body{
    }
 
    .blog-box{
-    padding: 178px 0;
     background-color: #fff;
+    padding: 35px 0;
+     @include media-breakpoint-up(sm){
+      padding: 178px 0;
+     }
      .blog-heading{
       color: #000000;
       text-align: center;
@@ -231,13 +298,20 @@ body{
         &.blog-img1{
           max-width: 930px;
           height: 587px;
+          margin-bottom: 20px;
+          @include media-breakpoint-up(sm){
+          max-width: 930px;
+          height: 587px;
+          }
+          
         }
       } 
       .blog-img-rightbox{
+        @include media-breakpoint-up(sm){
          flex:auto;
          margin-left: 36px;
+        }
         .blog-img{
-            margin: 32px 0;
             max-width: 785px;
             width: 100%;
             height: 277px;
@@ -248,9 +322,8 @@ body{
             margin-bottom: 33px;
           }
           
-         
           .blog-text{
-            font-size: 25px;
+              font-size: 25px;
             @include media-breakpoint-up(sm){
               font-size: 35px;  
             }
@@ -274,13 +347,18 @@ body{
     box-shadow: 10px 40px 50px #E5E9F666;
     border-radius: 18px;
     .review-icon{
-      padding-top: 70px; 
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       img{
-        width: 53px;
+        width: 54px;
         height: 42px;
+      }
+      @include media-breakpoint-up(sm){
+      padding-top: 70px; 
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       }
       .cmn-review-text{
         color: #000000;

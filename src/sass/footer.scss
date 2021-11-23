@@ -6,12 +6,16 @@ footer.te-footer {
     height: auto;
     .copyright{
       color: #000000;
-      padding: 76px 0;
+      padding: 35px 0;
+      @include media-breakpoint-up(sm){
+        padding: 76px 0;
+      }
+      
     }
     .footer-nav{
         
         ul {
-                padding: 76px 0;
+                padding: 10px 0;
             @include media-breakpoint-up(sm){
                 display: flex;
                 align-items: center;
