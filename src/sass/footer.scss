@@ -11,13 +11,21 @@ footer.te-footer {
     .footer-nav{
         
         ul {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 76px 0;
+                padding: 76px 0;
+            @include media-breakpoint-up(sm){
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 76px 0;
+            }
+            
             li {
-                text-decoration: none;
-                list-style: none;
+                    line-height: 40px;
+                @include media-breakpoint-up(sm){
+                    text-decoration: none;
+                    list-style: none;
+                }
+                
     
                 a {
                     color: #000000;
