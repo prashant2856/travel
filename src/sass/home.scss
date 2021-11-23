@@ -34,10 +34,23 @@ body{
          border-radius: 18px;
          object-fit: cover;
        }
-       .banner-heading{
-          background-color:red;
-          text-transform: uppercase;
-       }
+       .banner-content{
+        color: #fff; 
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        .banner-text-block{
+          max-width: 552px;
+          width: 100%;
+        }
+       } 
     }
   }
   .travel-info{
@@ -220,8 +233,7 @@ body{
            @include media-breakpoint-up(sm){
             font-size:22px;
            }
-           
-         }
+        }
       } 
      }
     } 
