@@ -33,8 +33,12 @@ footer.te-footer {
     
                 a {
                     color: #000000;
-                    font-size: 20px;
-                    line-height: 29px;
+                    font-size: 16px;
+                    line-height: 25px;
+                    @include media-breakpoint-up(sm){
+                        font-size: 20px;
+                        line-height: 29px;
+                    }
                   }
             }
           }

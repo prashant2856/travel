@@ -22,7 +22,7 @@
     <% include /src/include/header.ejs %>
 
         <main id="te-page-index">
-          
+
             <section class="home-banner">
                 <div class="container-fluid">
                    <div class="bannerimg">
@@ -30,11 +30,27 @@
                       <div class="banner-content">
                         <div class="banner-text-block text-center">
                           <h2>TRAVEL TO EXPLORE</h2>
-                          <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua.</p>
+                          <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ultricies Mi Eget Mauris Pharetra.</p>
                         </div>
                         <div class="banner-form">
-                           
-                        </div>
+                          <div class="row">
+                            <div class="search-form-box col-md-6 col-lg-3">
+                              <label class="form-label">Where You Want to go</label>
+                              <input type="text" class="form-control form-search-control" placeholder="Search your location" aria-label="Search your location" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="search-form-box col-md-6 col-lg-3">
+                              <label class="form-label">Check-in</label>
+                              <input type="text" class="form-control" placeholder="Add date" aria-label="Add date" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="search-form-box col-md-6 col-lg-3">
+                              <label class="form-label">Check-out</label>
+                              <input type="text" class="form-control" placeholder="Add date" aria-label="Add date" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="col-md-12 col-lg-3">
+                              <button class="btn btn-primary btn-block btn-expplore w-100 h-100">Explore Now</button>
+                            </div>
+                          </div>
+                        </div>  
                       </div>
                    </div>
                 </div>
@@ -106,10 +122,11 @@
                         <button class="nav-link tour-title" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Long Term Slow Travel</button>
                     </li>
                   </ul>
-                 </div>
+                </div>
                  
-                 <div class="tab-content" id="weekend-tabContent">
+                <div class="tab-content" id="weekend-tabContent">
                  <div class="holiday-section tab-pane fade show active" id="weekend-break" role="tabpanel" aria-labelledby="weekend-break-tab">  
+
                  <div class="cmnbox-tourinfo destination-card">
                      <figure class="des-fig">
                         <img src="images/singapore.jpg" alt="Singapore">
@@ -280,8 +297,16 @@
                       </div>
                    </div>
                 </div>
+
                 </div>  
+                </div> 
+
+                <div class="tab-content" id="package-holiday-tabContent">
+                  <div class="holiday-section tab-pane fade" id="package-holiday" role="tabpanel" aria-labelledby="package-holiday-tab">
+                     test
+                  </div>
                 </div>
+
                 </div> 
              </section>
 
@@ -351,7 +376,7 @@
                    </div>
                    </div>
                 
-               </div>
+                </div>
              </section>
         </main>
 
