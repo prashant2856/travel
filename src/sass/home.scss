@@ -46,8 +46,13 @@ body{
         align-items: center;
         justify-content: center;
         padding: 50px;
+        
         .banner-text-block{
           max-width: 552px;
+          width: 100%;
+        }
+        .banner-form{
+          max-width: 876px;
           width: 100%;
         }
        } 
